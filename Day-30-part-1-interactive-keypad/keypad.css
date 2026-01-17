@@ -1,0 +1,96 @@
+body{
+    background: linear-gradient(to left,rgb(201, 163, 163),beige);
+    text-align: center;
+}
+h1{
+    color: grey;
+    font-weight: 300;
+}
+
+
+button{
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px #999;
+    cursor: pointer;
+    transform: 0.1s;
+}
+#one:hover{
+    background: linear-gradient(to right,black,grey);
+    font-weight: 800;
+    color: wheat;
+    border:1px solid beige;
+}
+#two:hover{
+    background: linear-gradient(to right,grey,black);
+    font-weight: 800;
+    color: ghostwhite;
+    border: 1px solid peachpuff;
+}
+#three:hover{
+    background: linear-gradient(to right,rgb(151, 166, 172),rgb(12, 14, 14));
+    font-weight: 800;
+    color: antiquewhite;
+    border: 1px solid wheat;
+}
+#four:hover{
+    background: linear-gradient(to left,rgb(20, 12, 20),darkslategray);
+    font-weight: 800;
+    color: #f0f0f0;
+    border: 1px solid lightgray;
+}
+#five:hover{
+    background: linear-gradient(to left,rgb(32, 32, 30),rgb(27, 27, 2));
+    font-weight: 800;
+    color: antiquewhite;
+    border-radius: 1px solid rgb(19, 17, 17);
+}
+#six:hover{
+    background: linear-gradient(to left,white,rgb(175, 80, 96));
+    font-weight: 800;
+    color: rgb(80, 145, 145);
+    border-radius: 1px solid azure;
+}
+#seven:hover{
+    background-color: rgb(4, 12, 4);
+    font-weight: 800;
+    color: antiquewhite;
+    border-radius: 1px solid lightgray;
+
+}
+#eight:hover{
+    background-color: darkslategray;
+    font-weight: 800;
+    color: whitesmoke;
+    border-radius: 1px solid black;
+}
+#nine:hover{
+    background: linear-gradient(to left,black,lightgray);
+    font-weight: 800;
+    color: black;
+    border-radius: 1px solid grey;
+}
+#star:hover{
+    font-weight: 800;
+    color: ghostwhite;
+    background: linear-gradient(to right,rgb(92, 92, 112),rgb(27, 25, 25));
+       border-radius: 1px solid azure;
+}
+#zero:hover{
+    font-weight: 800;
+    color: wheat;
+    background: lightslategray;
+    border-radius: 1px solid rgb(201, 40, 40);
+}
+#hash:hover{
+    font-weight: 800;
+    color: floralwhite;
+    background: linear-gradient(to right,grey,black);
+       border-radius: 1px solid darkgrey;
+}
+/**couldnt use the flex and grid properties for stlying the buttons**/

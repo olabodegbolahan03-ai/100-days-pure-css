@@ -1,0 +1,90 @@
+:root {
+  --neon-cyan: #00f2ff;
+  --bot-dark: #1a1a1a;
+}
+
+body {
+  background: #0d0d0d; /* Dark Lab background for high contrast */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.lab-stage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0d0d0d; /* Dark theme to make neon pop */
+}
+.bot-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: float 2s infinite ease-in-out; /* Hover physics */
+}
+.bot-head {
+  width: 150px;
+  height: 120px;
+  background: var(--bot-dark); /* Defined in your :root */
+  border-radius: 20px;
+  border: 2px solid var(--neon-cyan);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visor {
+  width: 80%;
+  height: 30px;
+  background: #000;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye-glow {
+  width: 60%;
+  height: 4px;
+  background: var(--neon-cyan);
+  box-shadow: 0 0 15px var(--neon-cyan);
+  animation: flicker 4s infinite; /* The "Top Notch" effect */
+}
+.bot-body {
+  width: 100px;
+  height: 80px;
+  background: var(--bot-dark); /* Matches your root variable */
+  margin-top: 15px; /* Creates the "no-neck" floating look */
+  border-radius: 15px 15px 40px 40px;
+  border-bottom: 4px solid var(--neon-cyan); /* Glowing trim */
+  position: relative;
+}
+.ground-shadow {
+  width: 120px;
+  height: 15px;
+  background: rgba(0, 242, 255, 0.1); /* Slight cyan glow on floor */
+  border-radius: 50%;
+  margin-top: 40px;
+  filter: blur(8px);
+  animation: shadow-pulse 2.5s infinite ease-in-out;
+}
+@keyframes shadow-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+  20%, 24%, 55% { opacity: 0.2; } /* Simulates a glitching LED */
+}

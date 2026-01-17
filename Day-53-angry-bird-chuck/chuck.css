@@ -1,0 +1,168 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+      --body-color: yellow;
+      --belly-color: white;
+      --brow-color: brown;
+      --beak-color: #FF8C00;
+       --border-color: black;
+
+}
+body::after{
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(180deg, transparent 0%, #0a0a0a 100%);
+}
+.scene{
+    height: 100vh;
+    padding: 10px;
+    background: linear-gradient(180deg, deepskyblue, deepskyblue);
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.angryBird{
+       position: relative;
+       animation: bob 5s ease-in-out infinite;
+
+}
+.body{
+     width: 10px;
+     height: 0;
+     border-left: 120px solid transparent;
+     border-right: 120px solid transparent;
+     border-bottom: 180px solid var(--body-color);
+     border-radius: 10%;
+   filter: drop-shadow(0 0 3px var(--border-color))
+           drop-shadow(3px 0 0 var(--border-color))
+            drop-shadow(0 -2px 0 var(--border-color))
+            drop-shadow(-1px 0 0 var(--border-color)) ;
+     position: relative;
+     z-index: 1;
+     
+}
+.body:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 4px var(--border-color))
+            drop-shadow(4px 0 0 var(--border-color))
+            drop-shadow(0 -3px 0 var(--border-color))
+            drop-shadow(-2px 0 0 var(--border-color));  
+
+}
+
+.brow{
+     width: 50px;
+     height: 12px;
+     background: var(--brow-color);
+     position: absolute;
+     z-index: 1;
+}
+.brow.left{
+     left: -65px;
+     top: 90px;
+     transform: rotate(18deg);
+
+}
+.brow.right{
+     top: 90px;
+     right: -65px;
+     transform: rotate(-18deg);
+}
+.eye{
+    width: 35px;
+    height: 34px;
+    background: var(--belly-color);
+    border-radius: 50%; 
+    position: absolute;
+    top: 95px;
+    border-top: 4px solid var(--border-color);
+    border-bottom: 4px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+.eye.left{
+     
+       left: 20px;
+
+}
+.eye.right{
+
+  right: 20px;
+}
+.pupil{
+    width: 10px;
+    height: 10px;
+    background: var(--border-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+}
+.pupil.left{
+     
+      left: 3px;
+}
+.pupil.right{
+     
+     right: 3px;
+     
+}
+.beak{
+    filter: drop-shadow(0 0 1px var(--border-color))
+           drop-shadow(1px 0 0 var(--border-color))
+            drop-shadow(0 -1px 0 var(--border-color))
+            drop-shadow(-1px 0 0 var(--border-color))
+      ;
+}
+.beak.up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid var(--beak-color);
+  position: absolute;
+  top: 113px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.beak.down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 19px solid var(--beak-color);
+  position: absolute;
+  top: 133px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+
+.belly{
+      width: 120px;
+      height: 30px;
+      background: var(--belly-color);
+      border-radius: 50% 50% 50% 50% / 80% 80% 0 0;
+      position: absolute;
+      top: 150px;
+      transform: translateX(-60px);
+  
+}
+@keyframes bob{
+  0%, 100%{transform: translateY(0);}
+  50%{transform: translateY(-10px);}
+
+}

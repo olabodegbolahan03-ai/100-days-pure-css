@@ -1,0 +1,369 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background: radial-gradient(circle, rgb(135, 178, 192),lightblue ,dodgerblue,rgb(132, 176, 211) );
+
+}
+#house{
+    width: 550px;
+    height: 500px;
+    border: 3px solid antiquewhite;
+    background-color: rgb(121, 121, 112);
+    position: relative;
+    top: 100px;
+    bottom: 0;
+    margin: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#roof{
+    position: absolute;
+    bottom: 450px;
+    right: -50px;
+    width: 650px;
+    height: 100px;
+    border: 3px solid antiquewhite;
+    background-color: rgb(163, 121, 66);
+    border-top-left-radius: 60%;
+    border-top-right-radius: 60%;
+    box-shadow: 2px 4px 7px 3px rgb(54, 53, 53);
+}
+#chimney{
+    position: absolute;
+    bottom: 500px;
+    right: 540px;
+    width: 50px;
+    height: 70px;
+    background-color: rgb(196, 201, 206);
+    border: 1px solid rgb(185, 195, 206);
+    border-radius: 1px;
+    z-index: -1;
+    box-shadow: 2px 1px 3px 2px rgb(65, 60, 60);
+}
+
+.chimney-blocks div{
+    background-color: burlywood;
+    border: 1px solid white;
+    
+}
+.block-1{
+    position: absolute;
+    width: 22px;
+    height: 10px;
+    
+
+}
+.block-2{
+    position: absolute;
+    width: 26px;
+    height: 10px;
+    left: 22px;
+    border-radius: 5%;
+}
+.block-3{
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    top: 10px;
+}
+.block-4{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 18px;
+    height: 10px;
+}
+.block-5{
+    position: absolute;
+    top: 20px;
+    width: 22px;
+    height: 10px;
+}
+.block-6{
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    width: 26px;
+    height: 10px;
+}
+.block-7{
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    top: 30px;
+}
+.block-8{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 18px;
+    height: 10px;
+    border-bottom-right-radius: 10%;
+}
+.block-9{
+    position: absolute;
+    top: 40px;
+    width: 50px;
+    height: 15px;
+    border-bottom-left-radius: 10%;
+}
+#window-1, #window-2{
+    width: 100px;
+    height: 120px;
+    background: linear-gradient(to left, navajowhite, beige);
+    border: 5px solid gold;
+    border-radius: 35px;
+}
+#window-1{
+    position: absolute;
+    left: 410px;
+    top: 100px;
+}
+#window-2{
+    position: absolute;
+    right: 410px;
+    top: 100px;
+    z-index: 2;
+
+}
+.window-1-bars div{
+    
+    height: 5px;
+    background-color: goldenrod;
+}
+.vertical-bar-1{
+    position: absolute;
+    transform: rotate(90deg);
+    top: 52px;
+    left: -9px;
+    width: 110px;
+}
+.horizontal-bar-1{
+    position: absolute;
+    top: 52px;
+    width: 90px;
+    z-index: 2;
+
+}
+.window-2-bars div{
+    background-color: goldenrod;
+    height: 5px;
+}
+.vertical-bar-2{
+    position: absolute;
+    transform: rotate(-90deg);
+    width: 110px;
+    top: 53px;
+    left: -10px;
+    z-index: 1;
+}
+.horizontal-bar-2{
+    position: absolute;
+    width: 90px;
+    top: 52px;
+    z-index: 2;
+}
+
+
+#door{
+    position: absolute;
+    bottom: 0;
+    left: 220px;
+    border: 6px solid gold;
+    border-radius: 6px;
+    background-color: rgb(146, 112, 26);
+    height: 150px;
+    width: 90px;
+    z-index: 3;
+}
+#door:hover{
+    border: 5.5px solid gold;
+    transform: skewY(8deg);
+    z-index: 3;
+    transition: ease-in-out;
+
+}
+.door-handle{
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    background-color: darkslategrey;
+    border: 1px solid rgb(8, 8, 46);
+    border-radius: 100%;
+}
+.door-handle:hover{
+    background-color: rgb(151, 139, 70);
+    transform: scale(1.1) rotate(10deg);
+    transition: ease-out;
+}
+.grass{
+    position: absolute;
+    top: 450px;
+    right: -250px;
+    width: 1000px;
+    height: 120px;
+   background-color: rgb(48, 138, 40);
+   transform: skewX(45deg);
+   border-radius: 20px;
+   z-index: -1;
+}
+.sign{
+    position: absolute;
+    left: 220px;
+    top: 492px;
+    width: 130px;
+    height: 50px;
+    background: linear-gradient( to bottom, #966f33,#815b49);
+    transform: skewX(50deg);
+    border-radius: 10px;
+    border: 4px solid burlywood;
+    z-index: 1;
+}
+
+/*.sign-text{
+    position: absolute;
+    top: 510px;
+    left: 250px;
+    text-align: center;
+    color: blanchedalmond;
+    font-weight: bold;
+    font-size: 12px;
+    display: block;
+    background: radial-gradient(circle, #966f33, burlywood);
+    padding: 5px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    font-family: cursive;
+   transform:  rotate(10deg) ;
+
+}*//*
+.sign-text::after{
+    content: " 🙂";
+    position: relative;
+}*/
+.flower-1 div:not(.stem){
+    z-index: 1;
+    background: linear-gradient( to top, pink, rgb(107, 22, 22));
+    border-collapse: separate;
+     border: 2px solid navajowhite;
+}
+.stem{
+    position: absolute;
+    top: 450px;
+    left: -185px;
+    width: 20px;
+    height: 5px;
+    background: linear-gradient(to bottom, green, rgb(59, 27, 27));
+    transform: rotate(90deg);
+}
+/*
+.petal-1{
+    position: absolute;
+    top: 420px;
+    right: 710px;
+    width: 20px;
+    height: 20px;
+   background: radial-gradient(circle, black, rgb(3, 58, 3)) !important;
+    border: 1px solid yellowgreen;
+    border-top-left-radius: 55%;
+    border-top-right-radius: 60%;
+    border-bottom-left-radius: 65%;
+    border-bottom-right-radius: 70%;
+    transform: rotate(90deg);
+ }   */ 
+    /*hidden*/
+
+.petal-2{
+    position: absolute;
+    top: 430px;
+    right: 700px;
+    width: 18px;
+    height: 20px; 
+    border-top-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    transform: rotate(20deg);
+    z-index: 1;
+}
+.petal-3{
+    position: absolute;
+    top: 430px;
+    right: 720px;
+    width: 18px;
+    height: 18px;
+    border-top-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+.petal-4{
+   position: absolute;
+   top: 425px;
+   right: 710px;
+    border-top-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    transform: rotate(-45deg);
+     width: 18px;
+    height: 20px;
+    z-index: 3;
+
+}
+/*
+.petal-5{
+    position: absolute;
+    top: 420px;
+    right: 710px;
+    width: 18px;
+    height: 20px; 
+     border: 2px solid pink;
+    border-top-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    transform: rotate(360deg);
+}*/
+/* hidden */
+.sun{
+    position: relative;
+     left: 10px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, ghostwhite 20%, yellow, rgb(203,163,7));
+    border: 5px solid transparent;
+    border-radius: 120px;
+    box-shadow: 5px 5px 20px 6px rgb(233, 198, 1);
+}
+body, #house, #roof, #window1, #window2, .sun, .grass, .sign{
+    transition: all 0.8s ease-in-out !important;
+}
+@media only screen and (max-width: 1080px){
+    body{
+        background: linear-gradient(to bottom, #020111 10%, #191621 100%);
+    }
+    .sun{
+        background: #f0f0f0;
+        box-shadow: 0 0 30px #ffffff;
+        border: none;
+    }
+    #house{
+        background-color: #3d3d3d;
+    }
+    #roof{
+        background-color: #4a2c2a;
+    }
+    #window-1, #window-2{
+        background-color: #ffda00;
+        box-shadow: 0 0 15px rgba(255, 218, 0, 0.7);
+    }
+    .grass{
+        background-color: #0d2e0d;
+    }
+    .sign{
+        background-color: #553a3a;
+    }
+
+
+}

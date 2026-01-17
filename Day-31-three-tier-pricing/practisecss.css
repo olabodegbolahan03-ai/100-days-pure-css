@@ -1,0 +1,129 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+h1,.banner,footer{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    color: rgb(41, 3, 77);
+}
+a{
+    color: black;
+    font-weight: 300;
+}
+h1{
+    font-weight: 700;
+    font-size: 40px;
+}
+.banner,.footer{
+    font-size: 20px;
+    font-weight: 400;
+}
+.footer{
+    display: flex;
+    border-left: 7px solid rgb(46, 4, 37);
+    margin-top: 1%;
+}
+body{
+    background: radial-gradient(rgb(149, 170, 182),rgb(156, 194, 238),rgb(116, 183, 192));
+}
+p{
+    font-size: 40px;
+    font-weight: 500;
+}
+.mth{
+    font-size: 25px;
+}
+.card{
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 50px;
+    padding: 5px;
+    width: 15%;
+    color: whitesmoke;
+    font-family: sans-serif;
+
+}
+ul{
+    list-style-type: none;
+}
+#basic{
+    background: linear-gradient(to left,rgb(34, 128, 143),rgb(59, 85, 99));
+}
+#pro{
+    background: linear-gradient(to right,rgb(73, 116, 116),rgb(46, 102, 90));
+    border: 3px solid rgb(37, 59, 4);
+}
+#proplus{
+    background: linear-gradient(to left,rgba(77, 129, 129, 0.87),rgb(82, 50, 79));
+    border: 5px solid rgb(121, 34, 34);
+}
+#btn1{
+    padding: 3% 3%;
+    border: 1px solid rgb(69, 199, 216);
+    border-radius: 10px;
+    color: grey;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0,0,0);
+    background-color: rgb(3, 3, 27);
+    font-size: 12px;
+    margin-bottom: 1%;
+    font-weight: 500;
+}
+#btn1:hover{
+    font-size: 15px;
+    color: black;
+    background-color: rgb(55, 170, 190);
+
+}
+#btn2{
+    padding: 3% 3%;
+    border: 1px solid rgb(67, 116, 87);
+    border-radius: 10px;
+    color: rgb(94, 90, 90);
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: black;
+    font-weight: 500;
+    margin-bottom: 1%;
+    font-size: 12px;
+}
+#btn2:hover{
+    background-color: rgb(116, 192, 181);
+    color: black;
+    font-size: 15px;
+}
+#btn3{
+    padding: 3% 3%;
+    border: 1px solid rgba(80, 45, 66, 0.87);
+    border-radius: 10px;
+    color: rgb(163, 153, 153);
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 1%;
+    background-color: black;
+    margin-bottom: 1%;
+    
+}
+#btn3:hover{
+    font-size: 15px;
+    color: black;
+    background-color: rgb(151, 91, 151);
+}
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .card{
+        width: 90%;
+        margin: 0 auto;
+    }
+}

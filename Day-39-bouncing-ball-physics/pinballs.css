@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: black;
+    --color1: royalblue;
+    --color2: darkblue;
+    --color3: dodgerblue;
+    --color4: navy;
+    --color5: midnightblue;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --border: 2px solid whitesmoke
+}
+body{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+#ball-container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border: var(--border);
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--shadow-color);
+    overflow: hidden;
+    background: linear-gradient(45deg, white, lightblue, var(--color3), aliceblue, blue);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+.ball{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+}
+.ball.one{
+    background-color: var(--color1);
+    top: 50px;
+    left: 100px;
+    animation: moveBall1 5s linear infinite;
+}
+.ball.two{
+    background-color: var(--color2);
+    top: 150px;
+    left: 200px;
+    animation: moveBall2 6s linear infinite;
+}
+.ball.three{
+    background-color: var(--color3);
+    top: 250px;
+    left: 300px;
+    animation: moveBall3 7s linear infinite;
+}
+.ball.four{
+    background-color: var(--color4);
+    top: 350px;
+    left: 400px;
+    animation: moveBall4 8s linear infinite;
+}
+.ball.five{
+    background-color: var(--color5);
+    top: 450px;
+    left: 500px;
+    animation: moveBall5 9s linear infinite;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes moveBall1 {
+    0%, 100% {
+        top: 50px; left: 100px;
+    }
+    50% {
+        top: 400px; left: 700px;
+    }
+}
+@keyframes moveBall2 {
+    0%, 100% {
+        top: 150px; left: 200px;
+    }
+    50% {
+        top: 50px; left: 600px;
+    }
+}
+@keyframes moveBall3 {
+    0%, 100% {
+        top: 250px; left: 300px;
+    }
+    50% {
+        top: 450px; left: 100px;
+    }
+}
+@keyframes moveBall4 {
+    0%, 100% {
+        top: 350px; left: 400px;}
+    50% {top: 150px; left: 700px;}
+}
+@keyframes moveBall5 {
+    0%, 100% {
+        top: 450px; left: 500px;
+    }
+    50% {
+        top: 50px; left: 200px;
+    }
+}

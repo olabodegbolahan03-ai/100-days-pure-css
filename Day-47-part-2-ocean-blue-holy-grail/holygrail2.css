@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --holy-header: linear-gradient(135deg, deepskyblue, deepskyblue);
+    --holy-nav: linear-gradient(135deg, dodgerblue, royalblue);
+    --holy-main: linear-gradient(135deg, midnightblue, navy);
+    --holy-aside: linear-gradient(135deg, steelblue, slateblue);
+    --holy-footer: linear-gradient(135deg, rgb(51, 157, 192), darkblue);
+}
+.holygrail-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.header {
+    grid-area: header;
+    background: var(--holy-header);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+.nav {
+    grid-area: nav;
+   background: var(--holy-nav);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+.main {
+    grid-area: main;
+     background: var(--holy-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+.aside {
+    grid-area: aside;
+    background: var(--holy-aside);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+.footer {
+    grid-area: footer;
+    background: var(--holy-footer);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+body {
+    margin: 0;
+    font-family: cursive, sans-serif;
+   background: linear-gradient(135deg, lightblue, skyblue);
+}
+header, nav, main, aside, footer {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgb(41, 51, 51) rgba(255, 255, 255, 0.1);
+}
+header:hover, nav:hover, main:hover, aside:hover, footer:hover {
+   cursor: pointer;
+}
+header:hover {
+  box-shadow: 0 0 30px cyan; 
+  transform: scale(1.01);
+}
+
+nav:hover {
+  box-shadow: 0 0 30px cyan;
+  transform: scale(1.01);
+}
+
+main:hover {
+  box-shadow: 0 0 30px cyan; 
+  transform: scale(1.01);
+}
+
+aside:hover {
+  box-shadow: 0 0 30px cyan; 
+  transform: scale(1.02);
+}
+
+footer:hover {
+  box-shadow: 0 0 30px cyan;
+  transform: scale(1.01);
+}
+@media (max-width: 768px) {
+  .holy-grail {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+}

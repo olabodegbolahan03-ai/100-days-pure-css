@@ -1,0 +1,46 @@
+body{
+    background-color: beige;
+}
+.parent-nav{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 5%;
+    background-color: rgb(145, 109, 42);
+    justify-content: center;
+}
+.parent-hover{
+    padding: 2px 2px;
+    background: linear-gradient(to right,beige,rgb(165, 175, 119));
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    color: rgb(150, 72, 42);
+    position: relative;
+}
+.parent-hover:hover> .sub-list{
+opacity: 1;
+visibility: visible;
+}
+
+ul{
+    list-style-type: none;
+}
+.sub-list{
+    position: absolute;
+    margin-left: 0%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(150, 72, 42);
+}
+.sub-list{
+    padding: 2px 2px;
+    margin-right: 5%;
+    background-color: antiquewhite;
+    color: goldenrod;
+}

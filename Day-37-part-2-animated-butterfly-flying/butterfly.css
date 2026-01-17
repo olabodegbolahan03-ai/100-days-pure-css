@@ -1,0 +1,224 @@
+:root{
+    --body-color: linear-gradient(to right, beige, pink);
+    --box-size: border-box;
+    --wing-color1: linear-gradient(to right,orange, rgb(212, 212, 189));
+    --lower-wing: linear-gradient(to left, rgb(142, 165, 42), rgb(202, 205, 50));
+    --body-colorb: linear-gradient(to top, grey 0%, black 50%, gray 100%);
+    --wing-flip: scaleX(-1);
+    --color-black: black;
+    --color-black2: rgb(48, 45, 45);
+    --eyes-color: radial-gradient(circle, white , rgb(0,0,0) 20%,grey);
+    --nature-bg: radial-gradient(circle, rgb(34, 32, 32), rgb(0, 0, 0), rgb(5, 34, 44));
+    --wing-border: 2px dotted rgb(250, 250, 44);
+    --bottom-partten: radial-gradient(circle, grey 0%, bisque 50%, grey 100%);
+    --top-partten: radial-gradient(circle, grey 0%, brown 50%, black 100%);
+    
+}
+body{
+    background: var(--body-color), pink ;
+    box-sizing: var(--box-size);
+}
+.container{
+    position: relative;
+    top: 50px;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid rgb(117, 106, 106);
+    background: var(--nature-bg);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+   /* display: flex;
+    justify-content: center; */
+}
+.left-wing{
+   background-color: var(--wing-color2);
+   position: relative;
+}
+.right-wing{
+    transform-origin: center left;
+    animation: flap-right 0.6s ease-in-out infinite alternate ;
+}
+.wing{
+    transform-origin: center right;
+    animation: flap 0.4s  ease-in-out infinite alternate;
+
+} 
+    
+[class=upper-left-wing], [class=upper-right-wing]{
+    position: absolute; 
+    background: var(--wing-color1);
+    width: 150px;
+    height: 70px;
+   border-radius: 50% 70% 70% 70%;
+   border: var(--wing-border);
+}
+[class=upper-left-wing]{
+     top: 50px;
+    left: 50px;
+     transform: rotate(18deg);
+     
+
+}
+[class=upper-right-wing]{
+    top: 50px;
+    right: 60px;
+    transform: rotate(-18deg) var(--wing-flip);
+}
+.body{
+    position: absolute;
+     left: 190px;
+     top: 80px;
+    height: 50px;
+    width: 13px;
+    background: var(--body-colorb);
+    border-radius: 50% 50% 50% 50%;
+    z-index: 4;
+}
+.tail{
+    position: absolute;
+    top: 45px;
+    left: 1px;
+    height: 15px;
+    width: 9px;
+    background-color: var(--color-black2);
+     border-radius: 60% 60% 100% 100%;
+     border: 1px solid grey;
+
+
+}
+[class=lower-left-wing], [class=lower-right-wing]{
+    position: absolute;
+    background: var(--lower-wing);
+    width: 120px;
+    height: 50px;
+    border-radius: 80% 100% 100% 80%;
+    border: var(--wing-border);
+}
+[class=lower-left-wing]{
+    top: 125px;
+    left: 80px;
+    transform: rotate(-30deg);
+}
+[class=lower-right-wing]{
+    top: 120px;
+    right: 90px;
+    transform: var(--wing-flip) rotate(-30deg);
+    
+}
+[class=left-eye], [class=right-eye] {
+    position: absolute;
+    height: 20px;
+    width: 1px;
+    background-color: var(--color-black);
+    border-radius: 50%;
+}
+[class=eyes]{
+    position: absolute;
+    top: -6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: var(--eyes-color);
+}
+[class=left-eye]{
+     bottom: 10px;
+     left: 3px;
+}
+[class=right-eye]{
+    bottom: 10px;
+    left: 10px;
+}
+[class~=pattern]{
+    position: absolute;
+   width: 10px;
+   height: 10px;
+   border-radius: 100%;
+   background-color: brown;
+   box-shadow: 10px 10px 10px grey;
+
+}
+[class*= left5], [class*= left6], [class*= left7], [class*= right5], [class*= right6], [class*= right7]{
+    background: var(--bottom-partten);
+}
+[class *=left1], [class *=left2], [class *=left3], [class *=left4], [class *=right1], [class *=right2], [class *=right3], [class *=right4]{
+    background: var(--top-partten);
+}
+[class='pattern left1']{
+    background-color: purple;
+    top: 30px;
+    left: 120px;
+}
+[class='pattern left2']{
+    background-color: purple;
+    top: 20px;
+    left: 5px;
+}
+[class='pattern left3']{
+    background-color: blueviolet;
+    top: 5px;
+    left: 50px;
+}
+[class='pattern left4']{
+    background-color: coral;
+    top: 52px;
+    left: 40px;
+}
+
+[class='pattern left5']{
+    left: 90px;
+    top: 20px;
+}
+[class='pattern left6']{
+    left: 5px;
+    top: 20px;
+}
+[class='pattern left7']{
+    left: 50px;
+    top: 20px;
+}
+/*the right wings are flipped */
+[class='pattern right1']{
+    right: 25px;
+    top: 25px;
+}
+[class*='right2']{
+    right: 130px;
+    top: 30px;
+}
+[class*="right3"]{
+    top: 60px;
+    left: 60px;
+}
+[class*='right4']{
+    top: 5px;
+    left: 70px
+}
+[class*='right5']{
+    top: 23px;
+    left: 90px;
+}
+[class*='right6']{
+    top: 20px;
+    left: 50px;
+}
+[class*='right7']{
+    top: 20px;
+    left: 10px;
+}
+@keyframes flap {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-80deg);
+    }
+}
+@keyframes flap-right{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(70deg);
+    }
+}

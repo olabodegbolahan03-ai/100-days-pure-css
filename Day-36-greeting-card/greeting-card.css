@@ -1,0 +1,69 @@
+.card-container{
+    background: linear-gradient(to right,pink,lightpink);
+    color: green;
+    padding: 10px;
+    border: 2px solid lawngreen;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 1em;
+    transition: transform 0.3s, background-color 0.3s ease;
+    box-shadow: 0 4px 8px lightcoral;
+    max-width: fit-content;
+}
+.card-container:hover{
+    transform: scale(1.1);
+}
+body{
+    background: linear-gradient(to right, orchid, rgb(44, 39, 39), orchid);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     padding: 40px;
+     text-align: center;
+
+}
+section{
+    color: green;
+    border: 2px solid darkslategrey;
+    background-color: beige;
+    max-width: 600px;
+    display: none;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+section:hover{
+    transform: skewX(10deg);
+}
+section:target{
+    display: block;
+}
+.card-links{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.card-links a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(17, 173, 17);
+    color: beige;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.card-links a:hover{
+    background-color: deeppink;
+}
+.card-links a:active{
+    background-color: pink;
+}
+
+h1::after{
+    content: " 🎄";
+}
+h1::before{
+    content: "🎄 ";
+}
+.message{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
