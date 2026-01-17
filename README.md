@@ -18,11 +18,13 @@ The Lab is currently in a breakout phase with a focus on high-fidelity CSS art a
 This repository tracks my progress from Day 30 to Day 100. Each project is built using only HTML and CSS.
 
 ### 🐦 The Angry Bird Collection
-| Day | Character | Key Techniques |
-| :--- | :--- | :--- |
-| **53** | **Chuck (Yellow)** | Triangle geometry, `border-radius` manipulation |
-| **52** | **Red** | Stacking `box-shadow`, complex curvature |
-| **54** | **Bomb (Black)** | *Coming Soon (Community Requested)* |
+| Day | Character | Key Techniques | Source Code |
+| :--- | :--- | :--- | :--- |
+| **53** | **Chuck (Yellow)** | Triangle geometry | [📂 View Folder](./Day-53-Chuck) |
+| **52** | **Red** | `box-shadow` stacking | [📂 View Folder](./Day-52-Red) |
+| **53** | **Bomb (Black)** | coming soon | coming soon |
+
+
 
 ### 💻 Advanced UI & Animation
 * **Day 51: Neon Pulse Nav Bar** - Multi-color glow using CSS variables and `@keyframes`.
@@ -36,4 +38,11 @@ To explore the Lab locally:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/olabodegbolahan03-ai/100-days-pure-css.git](https://github.com/YOUR_GITHUB_USERNAME/100-days-pure-css.git)
+   git clone [https://github.com/olabodegbolahan03-ai/100-days-pure-css.git](https://github.com/olabodegbolahan03-ai/100-days-pure-css.git)
+
+## 📬 Connect with the Lab
+Join **17,000+ viewers** watching the journey unfold daily:
+
+* **YouTube:** [Subscribe to Pure CSS Lab](https://youtube.com/@PureCSSLab) — *Goal: 100 Subs!*
+* **TikTok:** [Follow @PureCSSLab](https://tiktok.com/@PureCSSLab)
+* **CodePen:** [Check out my live Demos](https://codepen.io/Olabode-Gbolahan)
