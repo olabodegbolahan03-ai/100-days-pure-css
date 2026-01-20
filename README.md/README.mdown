@@ -22,7 +22,7 @@ This repository tracks my progress from Day 30 to Day 100. Each project is built
 | :--- | :--- | :--- | :--- |
 | **53** | **Chuck (Yellow)** | Triangle geometry | [📂 View Folder](./Day-53-Chuck) |
 | **52** | **Red** | `box-shadow` stacking | [📂 View Folder](./Day-52-Red) |
-| **53** | **Bomb (Black)** | coming soon | coming soon |
+| **53** | **Bomb (Black)** | (./Day-54-bomb) | coming soon |
 
 
 
